@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d185e3a3-31de-49b5-aaac-6aab992631f0" name="Default Changelist" comment="" />
+    <list default="true" id="d185e3a3-31de-49b5-aaac-6aab992631f0" name="Default Changelist" comment="init commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/skofenko/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/skofenko/MainForm.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -28,6 +34,7 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1tWdNf748vK9YaFqOySfLo2GQPm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -131,7 +138,19 @@
       <option name="presentableId" value="Default" />
       <updated>1622888742375</updated>
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1623152652666</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623152652666</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -18,6 +18,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
 import java.awt.geom.AffineTransform;
 import java.io.File;
 import java.io.FileWriter;
@@ -68,6 +69,7 @@ public class MainForm extends JFrame {
 
     private static class DrawPanel extends JPanel {
         static final Color LIGHT_BLUE = new Color(51, 204, 255);
+        int mouseX = -1, mouseY = -1;
 
         @Override
         protected void paintComponent(Graphics g) {
@@ -100,6 +102,16 @@ public class MainForm extends JFrame {
                 else
                     g.drawString(String.valueOf(i++), cord.x - 5 * (int) Math.ceil(Math.log10(i)), cord.y + 7);
             }
+            if (mouseX != -1 && mouseY != -1) {
+                g.setColor(Color.LIGHT_GRAY);
+                g.drawOval(mouseX - 20, mouseY - 20, 40, 40);
+            }
+        }
+
+        public void clearCircle() {
+            Graphics g = getGraphics();
+            g.setColor(Color.WHITE);
+            g.drawOval(mouseX - 20, mouseY - 20, 40, 40);
         }
     }
 
@@ -284,6 +296,17 @@ public class MainForm extends JFrame {
             paintGraph.findMinVert();
             drawingPanel.repaint();
         });
+        drawingPanel.addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseMoved(MouseEvent e) {
+                super.mouseMoved(e);
+                if (state[0]) {
+                    drawingPanel.mouseX = e.getX();
+                    drawingPanel.mouseY = e.getY();
+                    drawingPanel.repaint();
+                }
+            }
+        });
     }
 
     private void paintGraph(String dot) throws IOException {
@@ -293,6 +316,10 @@ public class MainForm extends JFrame {
 
     private void buttonClick(JButton button) {
         final JButton[] buttons = {vertButton, edgeButton, removeButton, noneButton};
+        if (state[0] && button != vertButton) {
+            drawingPanel.mouseX = -1; drawingPanel.mouseY = -1;
+            drawingPanel.clearCircle();
+        }
         for (int i = 0; i < buttons.length; i++) {
             if (buttons[i] == button) {
                 buttons[i].setBorder(new LineBorder(Color.RED));
