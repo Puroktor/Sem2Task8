@@ -107,12 +107,6 @@ public class MainForm extends JFrame {
                 g.drawOval(mouseX - 20, mouseY - 20, 40, 40);
             }
         }
-
-        public void clearCircle() {
-            Graphics g = getGraphics();
-            g.setColor(Color.WHITE);
-            g.drawOval(mouseX - 20, mouseY - 20, 40, 40);
-        }
     }
 
     private JPanel panelMain;
@@ -318,7 +312,6 @@ public class MainForm extends JFrame {
         final JButton[] buttons = {vertButton, edgeButton, removeButton, noneButton};
         if (state[0] && button != vertButton) {
             drawingPanel.mouseX = -1; drawingPanel.mouseY = -1;
-            drawingPanel.clearCircle();
         }
         for (int i = 0; i < buttons.length; i++) {
             if (buttons[i] == button) {

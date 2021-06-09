@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d185e3a3-31de-49b5-aaac-6aab992631f0" name="Default Changelist" comment="init commit">
+    <list default="true" id="d185e3a3-31de-49b5-aaac-6aab992631f0" name="Default Changelist" comment="circle around pointer added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/skofenko/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/skofenko/MainForm.java" afterDir="false" />
     </list>
@@ -145,12 +145,32 @@
       <option name="project" value="LOCAL" />
       <updated>1623152652666</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="circle around pointer added">
+      <created>1623215932315</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623215932315</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="circle around pointer added" />
+    <option name="LAST_COMMIT_MESSAGE" value="circle around pointer added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
