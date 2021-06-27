@@ -122,11 +122,26 @@ public class WGraph {
     public void findMinVert() {
         int sum = Integer.MAX_VALUE;
         for (int i = 0; i < numOfVert(); i++) {
-            sum = Math.min(sum, dijkstra(i, sum));
+            var now = dijkstra(i);
+            if (now.sum < sum) {
+                sum = now.sum;
+                min = i;
+                bestWay = now.path;
+            }
         }
     }
 
-    private int dijkstra(int i, int exSum) {
+    private static class SumAndPath {
+        int sum;
+        Pair[] path;
+
+        private SumAndPath(int sum, Pair[] path) {
+            this.sum = sum;
+            this.path = path;
+        }
+    }
+
+    private SumAndPath dijkstra(int i) {
         Pair[] from = new Pair[numOfVert()];
         FibonacciHeap<Integer> pQueue = new FibonacciHeap<>();
         ArrayList<FibonacciHeap<Integer>.Node> paths = new ArrayList<>();
@@ -151,10 +166,6 @@ public class WGraph {
         for (var node : paths) {
             sum += node.getPriority();
         }
-        if (exSum > sum) {
-            min = i;
-            bestWay = from;
-        }
-        return sum;
+        return new SumAndPath(sum, from);
     }
 }

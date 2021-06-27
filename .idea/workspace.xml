@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d185e3a3-31de-49b5-aaac-6aab992631f0" name="Default Changelist" comment="circle around pointer added">
+    <list default="true" id="d185e3a3-31de-49b5-aaac-6aab992631f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/skofenko/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/skofenko/MainForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proof.txt" beforeDir="false" afterPath="$PROJECT_DIR$/proof.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/skofenko/WGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/skofenko/WGraph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,6 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1tWdNf748vK9YaFqOySfLo2GQPm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -138,21 +138,6 @@
       <option name="presentableId" value="Default" />
       <updated>1622888742375</updated>
     </task>
-    <task id="LOCAL-00001" summary="init commit">
-      <created>1623152652666</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1623152652666</updated>
-    </task>
-    <task id="LOCAL-00002" summary="circle around pointer added">
-      <created>1623215932315</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1623215932315</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,11 +151,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="init commit" />
-    <MESSAGE value="circle around pointer added" />
-    <option name="LAST_COMMIT_MESSAGE" value="circle around pointer added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
